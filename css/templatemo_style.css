@@ -287,7 +287,7 @@ textarea:hover,
 
 label {
   font-size: 14px;
-  color: #d4d4d4;
+  color: #555555;
   margin: 0 0 10px 0;
 }
 
@@ -472,7 +472,7 @@ label {
 .content-section {
   position: relative;
   z-index: 10;
-  padding: 100px 0 90px 0;
+  padding: 90px 0 90px 0;
 }
 .content-section h3 {
   text-transform: uppercase;
@@ -485,7 +485,7 @@ label {
 
 .section-title {
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #dbdbdb;
   margin: 0 0 90px 0;
   width: 100%;
@@ -692,7 +692,7 @@ label {
   width: 100%;
   height: 60px;
   margin-top: 30px;
-  margin-bottom: 15px;;
+  margin-bottom: 15px;
   }
   .copyright-text {
     font-size: 12px;
