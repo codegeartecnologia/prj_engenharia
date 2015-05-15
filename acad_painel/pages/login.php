@@ -20,24 +20,34 @@
 								<div class="form-group">
 									<input class="form-control" type="password" placeholder="Password" type="password" name="senha" value=" <?php echo $_POST['senha']; ?> " />
 								</div>
-								
-								<input class="btn btn-lg btn-success btn-block" type="submit" name="logar" value="Entrar" /> 
-								
+								<div class="form-group">
+									<input class="btn btn-lg btn-success btn-block" type="submit" name="logar" value="Entrar" />
+								</div>
+								<?php
+									$erro = $_GET['erro'];
+									
+									switch($erro):
+										case 1:
+											printMSG('Você fez logoff do sistema! ','sucesso');
+											?> 
+											<a href="<?php echo BASESITE; ?>" > <i class="fa fa-arrow-left fa-fw"></i> Voltar ao Site </a>
+											<?php
+										break;
+										case 2:
+											printMSG('Dados incorretos ou dados inativos!', 'alerta');
+											?> 
+											<a href="<?php echo BASESITE; ?>"> <i class="fa fa-arrow-left fa-fw"></i> Voltar ao Site </a>
+											<?php
+										break;
+										case 3:
+											printMSG('Faça login para acessar a página solicitada!','erro');
+											?> 
+											<a href="<?php echo BASESITE; ?>"> <i class="fa fa-arrow-left fa-fw"></i> Voltar ao Site </a>
+											<?php
+										break;
+									endswitch;
+								?>
 							</ul>
-							<?php
-								$erro = $_GET['erro'];
-								switch($erro):
-									case 1:
-										printMSG('Você fez logoff do sistema!','sucesso');
-									break;
-									case 2:
-										printMSG('Dados incorretos ou dados inativos!', 'alerta');
-									break;
-									case 3:
-										printMSG('Faça login para acessar a página solicitada!','erro');
-									break;
-								endswitch;
-							?> 
 						</fieldset>
 					</form>
 				</div> <!-- painel-body -->

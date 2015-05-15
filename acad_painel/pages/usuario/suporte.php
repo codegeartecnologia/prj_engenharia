@@ -21,7 +21,7 @@
                                 <label> Problema </label>
                                 <div class="form-group input-group">
 	                                <span class="input-group-addon"> <i class="fa fa-code fa-fw"></i> </span>
-	                                <input type="text" class="form-control" placeholder="Frase que melhor descreva o problema">
+	                                <input type="text" required="" class="form-control" placeholder="Frase que melhor descreva o problema">
 	                            </div>
                             </div>
                             <div class="form-group">
@@ -39,12 +39,12 @@
                             	<label> Email </label>
 	                            <div class="form-group input-group">
 	                                <span class="input-group-addon">@ </span>
-	                                <input type="text" class="form-control" disabled="disabled" value="suporte@codegear.com">
+	                                <input type="email" class="form-control" disabled="disabled" value="suporte@codegear.com">
 	                            </div>
 	                        </div>
 	                        <div class="form-group">
                                 <label>Descrição do Problema</label>
-                                <textarea class="form-control" rows="13" name="descricao" placeholder="Texto contendo todas as informações necessárias"></textarea>
+                                <textarea class="form-control"  required="" rows="13" name="descricao" placeholder="Texto contendo todas as informações necessárias"></textarea>
                             </div>
                             <input class="btn btn-success" type="submit" name="enviar" value="Enviar Solicitalção" />
                         </div>

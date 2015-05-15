@@ -48,6 +48,9 @@
 		                                        	<?php printf('<a href="?m=servico&t=editar&id=%s"> Editar </a>', $res->id);?>
 		                                        </li>
 		                                        <li>
+		                                        	<?php printf('<a href="?m=servico&t=mudar_imagem&id=%s"> Editar Imagem </a>', $res->id);?>
+		                                        </li>
+		                                        <li>
 		                                        	<?php printf('<a href="?m=servico&t=excluir&id=%s"> Excluir </a>', $res->id);?>
 		                                        </li>
 		                                    </ul>

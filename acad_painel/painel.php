@@ -6,7 +6,7 @@
 	if (isset($modulo) && isset($tela)):
 		loadModulo($modulo, $tela);
 	else:
-		echo '<p> Escolha uma opção do menu ao lado! </p>';
+		echo '<p class="center"> Escolha uma opção do menu ao lado! </p>';
 	endif;
 	
 	include('pages/footer.php'); 

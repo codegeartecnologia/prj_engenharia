@@ -62,7 +62,45 @@
 				if(isset($_GET['id'])):
 					$id = $_GET['id'];
 					if(isset($_POST['editar'])):
-						echo "editar";
+			            $serv = new servico(array(
+							'titulo'=>$_POST['titulo'],
+							'descricao'=>trim($_POST['descricao']),
+							'apresentacao'=>($_POST['apresentacao']=='on') ? 's' : 'n',
+							'tipo_servico'=>$_POST['servico'],
+							'texto'=>trim($_POST['texto']),
+						));
+						
+						$servico = strtolower($_POST['servico']);
+						$serv->valorpk = $id;
+						$serv->extras_select = "WHERE id=$id";
+						$serv->selecionaTudo($serv);
+						$res = $serv->retornaDados();
+						$serv->atualizar($serv);
+						if($serv->linhasafetadas == 1):
+							printMSG('Dados inceridos com sucesso! <a href="'.ADMURL.'?m=servico&t='.$servico.'"> Exibir Cadastro </a>') ;
+							unset($_POST);
+						else:
+							printMSG(' Nenhum dado foi alterado! <a href="'.ADMURL.'?m=servico&t='.$servico.'"> Ver usuários </a>', 'alerta') ;
+						endif;  		
+					endif;									
+					$servbd = new servico();
+					$servbd->extras_select = "WHERE id=$id";
+					$servbd->selecionaTudo($servbd);
+					$resbd = $servbd->retornaDados();
+				else:
+					printMSG('Tipo de serviço não definido, <a href="?m=servico&t='.$servico.'"> Escolha um usuário para alterar!</a>','alerta');
+				endif;
+				include ('pages/servico/editar.php');
+			else:
+				printMSG('Você não tem permissão para acessar esta página! <a href="'.ADMURL.'?m=servico&t=listar"> Voltar </a>','erro');
+			endif;
+		break;
+		case 'mudar_imagem':
+			$sessao = new sessao();
+			if(isAdmin() == TRUE || $sessao->getVar('iduser') == $_GET['id']):
+				if(isset($_GET['id'])):
+					$id = $_GET['id'];
+					if(isset($_POST['editar_imagem'])):
 						$arquivo = $_FILES['imagem'];
 						$arquivoPermitido = array("jpeg", "jpg", "png", "gif");
 						$explode = explode(".", $_FILES['imagem']['name']);
@@ -73,21 +111,16 @@
 						
 						if(in_array($ext_permitido, $arquivoPermitido)):
 							if (move_uploaded_file($arquivoTemporario, $destino.$novo_nome)):
-								echo "com arquivo";
-					            $serv = new servico(array(
-									'titulo'=>$_POST['titulo'],
-									'descricao'=>trim($_POST['descricao']),
-									'apresentacao'=>($_POST['apresentacao']=='on') ? 's' : 'n',					
+					            $serv = new servico(array(				
 									'nome_imagem'=> $novo_nome,
-									'tipo_servico'=>$_POST['servico'],
-									'texto'=>trim($_POST['texto']),
 								));
 								
-								$servico = strtolower($_POST['servico']);
+								echo strtolower($_POST['servico']);
 								$serv->valorpk = $id;
 								$serv->extras_select = "WHERE id=$id";
 								$serv->selecionaTudo($serv);
 								$res = $serv->retornaDados();
+								$servico = strtolower($res->servico);
 								$serv->atualizar($serv);
 								if($serv->linhasafetadas == 1):
 									printMSG('Dados inceridos com sucesso! <a href="'.ADMURL.'?m=servico&t='.$servico.'"> Exibir Cadastro </a>') ;
@@ -95,28 +128,7 @@
 								else:
 									printMSG(' Nenhum dado foi alterado! <a href="'.ADMURL.'?m=servico&t='.$servico.'"> Ver usuários </a>', 'alerta') ;
 								endif;  
-					        else:
-								echo "sem arquivo";
-								$serv = new servico(array(
-									'titulo'=>$_POST['titulo'],
-									'descricao'=>trim($_POST['descricao']),
-									'apresentacao'=>($_POST['apresentacao']=='on') ? 's' : 'n',	
-									'tipo_servico'=>$_POST['servico'],
-									'texto'=>trim($_POST['texto']),
-								));
-								
-								$servico = strtolower($_POST['servico']);
-								$serv->valorpk = $id;
-								$serv->extras_select = "WHERE id=$id";
-								$serv->selecionaTudo($serv);
-								$res = $serv->retornaDados();
-								$serv->atualizar($serv);
-								if($serv->linhasafetadas == 1):
-									printMSG('Dados inceridos com sucesso! <a href="'.ADMURL.'?m=servico&t='.$servico.'"> Exibir Cadastro </a>') ;
-									unset($_POST);
-								else:
-									printMSG(' Nenhum dado foi alterado! <a href="'.ADMURL.'?m=servico&t='.$servico.'"> Ver usuários </a>', 'alerta') ;
-								endif;            
+					        else:        
 								printMSG('Aviso: Arquivo não enviado!','alerta');
 					        endif;
 						endif;			
@@ -127,9 +139,9 @@
 					$resbd = $servbd->retornaDados();
 				else:
 					//avisa para seleciona user
-					printMSG('Usuário não definido, <a href="?m=servico&t='.$servico.'"> Escolha um usuário para alterar!</a>','alerta');
+					printMSG('Tipo de Serviço não definido, <a href="?m=servico&t='.$servico.'"> Escolha um usuário para alterar!</a>','alerta');
 				endif;
-				include ('pages/servico/editar.php');
+				include ('pages/servico/mudar_imagem.php');
 			else:
 				printMSG('Você não tem permissão para acessar esta página! <a href="'.ADMURL.'?m=servico&t=listar"> Voltar </a>','erro');
 			endif;
