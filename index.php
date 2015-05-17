@@ -20,6 +20,7 @@
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 		<link href="css/animate.css" rel="stylesheet" media="screen">
         <link href="css/templatemo_style.css" rel="stylesheet" media="screen">
+         <link href="css/style.css" rel="stylesheet" media="screen">
        
         <!-- JavaScripts -->
         <script src="js/jquery-1.10.2.min.js"></script>
@@ -288,13 +289,20 @@
 			</ul>
 		    </div>
 		</div>
+		<div id="boxes">
+			<div id="dialog" class="window">
+				<a href="#" class="close">Fechar [X]</a><br />
+				<?php include 'servico.php' ?>
+			</div>
+		</div>
+		<div id="mask"></div>
 		    
 		    <div id="folio-container" class="row">
 			<div class="col-md-3 col-sm-6 folio-item webdesign">
 			    <div class="folio-thumb item-h2">
 				<img src="images/post1.jpg" alt="">
 				    <div class="folio-overlay">
-					<a href="images/big-post1.jpg" class="folio-zoom">
+					<a href="#dialog" name="modal">
 					    <i class="fa fa-plus"></i>
 					</a>
 				    </div> <!-- //.folio-overlay -->
@@ -302,7 +310,7 @@
 			    </div> <!-- //.folio-thumb -->
 			    <div class="folio-desc">
 				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes</a></h4>
+				<h4><a id="a_link" href="#">Supermario Shoes</a></h4>
 				<h6>Website & Shop</h6>
 			    </div> <!-- //.folio-desc -->
 			</div> <!-- folio-item -->
@@ -311,7 +319,7 @@
 			    <div class="folio-thumb">
 				<img src="images/post2.jpg" alt="">
 				    <div class="folio-overlay">
-					<a href="images/big-post2.jpg" class="folio-zoom">
+					<a href="#dialog" name="modal" >
 					    <i class="fa fa-plus"></i>
 					</a>
 				    </div> <!-- //.folio-overlay -->
@@ -413,7 +421,7 @@
 			    <div class="folio-thumb">
 				<img src="images/post8.jpg" alt="">
 				    <div class="folio-overlay">
-					<a href="images/big-post8.jpg" class="folio-zoom">
+					<a href="#dialog" name="modal">
 					    <i class="fa fa-plus"></i>
 					</a>
 				    </div> <!-- //.folio-overlay -->
@@ -421,7 +429,7 @@
 			    </div> <!-- //.folio-thumb -->
 			    <div class="folio-desc">
 				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes</a></h4>
+				<h4><a href="#">Supermario Shoes 2</a></h4>
 				<h6>Website & Shop</h6>
 			    </div> <!-- //.folio-desc -->
 			</div> <!-- folio-item -->

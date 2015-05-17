@@ -1,4 +1,4 @@
-
+﻿
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header"> Serviço </h1>
@@ -28,7 +28,7 @@
                                 <label> Imagem Ilustrativa </label>
                                 <div class="form-group input-group">
 	                                <span class="input-group-addon"> <i class="fa fa-photo fa-fw"></i> </span>
-                                	<input name="imagem" type="file">
+                                	<input name="imagem" required="" type="file">
                                 </div>
                             </div>
                             <div class="form-group">

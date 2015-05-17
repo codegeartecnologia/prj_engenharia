@@ -1,4 +1,4 @@
-
+﻿
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header"> Usuario </h1>
@@ -18,22 +18,22 @@
                         <div class="col-lg-6">		
                             <div class="form-group" >
                                 <label> Nome </label>
-                                <input class="form-control" required="" name="nome" placeholder="Nome completo">
+                                <input class="form-control" type="text" autofocus="autofocus" required="" name="nome" placeholder="Nome completo">
                             </div>
                             <div class="form-group">
                             	<label> E-mail </label>
 	                            <div class="form-group input-group">
 	                                <span class="input-group-addon">@</span>
-	                                <input class="form-control" required="" placeholder="E-mail" type="email" name="email" autofocus="autofocus"/>
+	                                <input class="form-control" required="" placeholder="E-mail" type="email" name="email"/>
 	                            </div>
 	                        </div>
                             <div class="form-group">
                                 <label>Senha </label>
-                                <input type="password" required="" type="number" maxlength="10" class="form-control" name="senha" placeholder="*****">
+                                <input type="password" required="" type="text" maxlength="10" class="form-control" name="senha" placeholder="*****">
                             </div>
                             <div class="form-group">
                                 <label> Repita Senha </label>
-                                <input type="password" required="" type="number" class="form-control" name="senhaconf" placeholder="*****">
+                                <input type="password" required="" type="text" class="form-control" name="senhaconf" placeholder="*****">
                             </div>
                             <div class="form-group">
                                 <label for="adm"> Administrador: </label>
