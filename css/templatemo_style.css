@@ -37,7 +37,7 @@ textarea,
   display: block;
   width: 100%;
   height: 100%;
-  background: rgba(224, 77, 71, 0.6);
+  background: rgba(204, 204, 204, 0.6);
   text-align: center;
   padding: 20px;
   top: 0;
@@ -106,7 +106,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #e04d47;
+  background-color: #696969;
   border-radius: 5px;
 }
 
@@ -115,13 +115,13 @@ body::-webkit-scrollbar-corner {
 }
 
 ::-moz-selection {
-  background: #e04d47;
+  background: #696969;
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: #e04d47;
+  background: #696969;
   color: white;
   text-shadow: none;
 }
@@ -182,7 +182,7 @@ textarea:focus, input:focus {
 #spinner:after {
   border-width: 0 3px 0 0;
   border-style: solid;
-  border-color: #e04d47;
+  border-color: #696969;
   border-radius: 50%;
   display: block;
   height: 50px;
@@ -229,8 +229,8 @@ textarea:focus, input:focus {
   cursor: pointer;
 }
 .slide-button:hover {
-  border-color: #e04d47;
-  color: #e04d47;
+  border-color: #696969;
+  color: #696969;
 }
 
 button,
@@ -238,7 +238,7 @@ input[type="submit"],
 .main-button {
   border: none;
   display: inline-block;
-  background-color: #e04d47;
+  background-color: #696969;
   color: white;
   padding: 12px 20px;
   font-family: "Open Sans", Helvetica, Arial, Heveltica Neue, sans-serif;
@@ -279,7 +279,7 @@ input[type="email"]:hover,
 textarea:hover,
 .form-input:hover {
   background-color: white;
-  border-color: #e04d47;
+  border-color: #696969;
   -moz-box-shadow: rgba(224, 77, 71, 0.5) 0px 0px 3px;
   -webkit-box-shadow: rgba(224, 77, 71, 0.5) 0px 0px 3px;
   box-shadow: rgba(224, 77, 71, 0.5) 0px 0px 3px;
@@ -309,7 +309,7 @@ label {
   right: 10px;
   top: -35px;
   display: block;
-  background-color: #e04d47;
+  background-color: #696969;
   width: 35px;
   height: 35px;
   text-align: center;
@@ -352,7 +352,7 @@ label {
   border-bottom: 1px solid #292929;
 }
 .mobile-nav ul li a:hover {
-  background-color: #e04d47;
+  background-color: #696969;
   color: white;
 }
 .mobile-nav .mobile-social-icons {
@@ -374,7 +374,7 @@ label {
   text-align: center;
 }
 .mobile-nav .mobile-social-icons li a:hover {
-  background: #e04d47;
+  background: #696969;
 }
 .mobile-nav .mobile-social-icons li a i {
   color: white;
@@ -429,7 +429,7 @@ label {
   color: #555555;
 }
 .main-navigation li a:hover {
-  color: #e04d47;
+  color: #696969;
 }
 
 .audio-player {
@@ -438,7 +438,7 @@ label {
   top: 8px;
   display: inline-block;
   padding: 2px 6px;
-  background-color: #e04d47;
+  background-color: #696969;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -471,7 +471,7 @@ label {
 
 .content-section {
   position: relative;
-  z-index: 10;
+  /*z-index: 10;*/
   padding: 40px 0 0 0;
 }
 .content-section h3 {
@@ -546,7 +546,7 @@ label {
 }
 .slide-navigation .slide-prev i:hover,
 .slide-navigation .slide-next i:hover {
-  color: #e04d47;
+  color: #696969;
 }
 
 /* Features Section */
@@ -557,7 +557,7 @@ label {
 }
 .feature-icon i {
   font-size: 30px;
-  color: #e04d47;
+  color: #696969;
 }
 
 .feature-title {
@@ -600,7 +600,7 @@ label {
 }
 .skillbar .skillbar-bar {
   display: block;
-  background-color: #e04d47;
+  background-color: #696969;
   width: 0;
   height: 4px;
 }
@@ -648,7 +648,7 @@ label {
 .counter-icon i {
   font-size: 30px;
   line-height: 40px;
-  color: #e04d47;
+  color: #696969;
 }
 
 .counter-number {
@@ -688,7 +688,7 @@ label {
 }
 
 #footer {
-  background-color: #e04d47;
+  background-color: #696969;
   width: 100%;
   height: 60px;
   margin-top: 30px;
@@ -739,39 +739,39 @@ label {
 
 .tooltip-inner {
   padding: 8px 12px;
-  background-color: #e04d47;
+  background-color: #696969;
 }
 
 .tooltip.top .tooltip-arrow {
-  border-top-color: #e04d47;
+  border-top-color: #696969;
 }
 
 .tooltip.top-left .tooltip-arrow {
-  border-top-color: #e04d47;
+  border-top-color: #696969;
 }
 
 .tooltip.top-right .tooltip-arrow {
-  border-top-color: #e04d47;
+  border-top-color: #696969;
 }
 
 .tooltip.right .tooltip-arrow {
-  border-right-color: #e04d47;
+  border-right-color: #696969;
 }
 
 .tooltip.left .tooltip-arrow {
-  border-left-color: #e04d47;
+  border-left-color: #696969;
 }
 
 .tooltip.bottom .tooltip-arrow {
-  border-bottom-color: #e04d47;
+  border-bottom-color: #696969;
 }
 
 .tooltip.bottom-left .tooltip-arrow {
-  border-bottom-color: #e04d47;
+  border-bottom-color: #696969;
 }
 
 .tooltip.bottom-right .tooltip-arrow {
-  border-bottom-color: #e04d47;
+  border-bottom-color: #696969;
 }
 
 .row.no-margin {
@@ -808,7 +808,7 @@ label {
   margin-right: 20px;
 }
 .contact-info ul li a {
-  color: #e04d47;
+  color: #696969;
   text-decoration: none;
 }
 .contact-info ul li a:hover {
@@ -848,7 +848,7 @@ label {
 }
 .team-overlay .team-social-icons li a {
   display: block;
-  background: #e04d47;
+  background: #696969;
   width: 35px;
   height: 35px;
   text-align: center;
@@ -918,11 +918,11 @@ label {
   content: " \201D";
 }
 .testimonials-slider .flex-control-paging li a:hover {
-  background: #e04d47;
+  background: #696969;
   background: rgba(224, 77, 71, 0.7);
 }
 .testimonials-slider .flex-control-paging li a.flex-active {
-  background: #e04d47;
+  background: #696969;
   background: rgba(224, 77, 71, 0.7);
   cursor: default;
 }
@@ -962,7 +962,7 @@ label {
   left: 42%;
   bottom: 50%;
   display: block;
-  background: #e04d47;
+  background: #696969;
   width: 35px;
   height: 35px;
   text-align: center;
@@ -1006,7 +1006,7 @@ label {
   color: #555555;
 }
 .folio-desc h4 a:hover {
-  color: #e04d47;
+  color: #696969;
 }
 .folio-desc h6 {
   font-family: "Open Sans", Helvetica, Arial, Heveltica Neue, sans-serif;
@@ -1038,11 +1038,11 @@ label {
 }
 .folio-filters li a:hover {
   color: white;
-  background-color: #e04d47;
+  background-color: #696969;
 }
 .folio-filters li.current a {
   color: white;
-  background-color: #e04d47;
+  background-color: #696969;
 }
 
 .folio-details {

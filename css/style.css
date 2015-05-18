@@ -19,13 +19,15 @@
 }
 
 #boxes #dialog {
-  width:70%; 
-  height:70%;
-  padding:10px;
+  width:85%;
+  height: auto;
+  padding: 5px;
+  display:none;
+  position: fixed;
   background-color:#ffffff;
 }
 
-.close{display:block; text-align:right;}
+.close{display:block; text-align:right; padding: 0 2%;}
 
 .sp-slideshow {
     position: relative;
@@ -33,7 +35,7 @@
 	width: 100%;
 	max-width: 1000px;
 	min-width: 320px;
-	height: 460px;
+	height: 350px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
@@ -301,25 +303,13 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 	padding: -40px 0 0 0;
 }
 
-#dialog h1, h3, h4, h5, h6{
+#dialog h1, h4, h5, h6{
 	font-family: Lato, Arial, Helvetica, sans-serif;
-	font-size: 210%;
-	font-weight: normal;
-	letter-spacing: 1px;
-	color: #333333;
-	margin: 0;
-	padding: 0;
-}
-
-#dialog h3{
-	font-size: 140%;
-	margin: 0;
-	padding: 0 10px;
 }
 
 .imagem{	
-	width: 57%;
-	height: 57%;
+	width: 50%;
+	height: 50%;
 	float: left;
 	margin: 0 2%;
 }
@@ -336,9 +326,13 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 	font-size: 14px;
 	color: #333333;
 	float: right;
-	width: 35%;
-	height: 35%;
-	margin: 0 2%;
+	width: 44%;
+	margin-right: 2%;
+}
+
+@media screen (min-width: 360px){
+	.imagem { float: none; width: auto; height: auto;}
+	.texto { float: none; width: auto; height: auto;}
 }
 
 .texto p{

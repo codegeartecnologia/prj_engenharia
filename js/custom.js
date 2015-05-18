@@ -34,7 +34,7 @@ jQuery(document).ready(function($){
 		var winH = $(window).height();
 		var winW = $(window).width();
               
-		$(id).css('top',  winH/2-$(id).height()+550);
+		$(id).css('top',  winH/2-$(id).height()+310);
 		$(id).css('left', winW/2-$(id).width()/2);
 	
 		$(id).fadeIn(2000); 
@@ -142,10 +142,10 @@ jQuery(document).ready(function($){
 function niceScrollInit() {
     $("html").niceScroll({
 	autohidemode: false,
-	cursorcolor: '#e04d47',
+	cursorcolor: '#696969',
 	zindex: 9999,
 	cursorwidth: 6,
-	cursorborder: "0px solid #e04d47",
+	cursorborder: "0px solid #696969",
 	background: "#000000",
 	scrollspeed: 60,
 	mousescrollstep: 40

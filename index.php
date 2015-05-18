@@ -109,7 +109,7 @@
 					    Curabitur a risus sed massa elementum dictum<br>
 					    Proin convallis venenatis sem
 					</h2>
-					<a class="slide-button">View Project</a>
+					<a href="#dialog" name="modal" class="slide-button">View Project</a>
 				    </div>
 				</div>
 			    </div>
@@ -126,7 +126,7 @@
 					    Nullam euismod erat eget mi tincidunt malesuada<br>
 					    Aliquam sed est volutpat turpis condimentum
 					</h2>
-					<a class="slide-button">View Project</a>
+					<a href="#dialog" name="modal" class="slide-button">View Project</a>
 				    </div>
 				</div>
 			    </div>
@@ -143,7 +143,7 @@
 					    Proin quis nunc nec turpis ultrices aliquet<br>
 					    Vestibulum placerat placerat eros
 					</h2>
-					<a class="slide-button">View Project</a>
+					<a href="#dialog" name="modal" class="slide-button">View Project</a>
 				    </div>
 				</div>
 			    </div>
@@ -289,14 +289,7 @@
 			</ul>
 		    </div>
 		</div>
-		<div id="boxes">
-			<div id="dialog" class="window">
-				<a href="#" class="close">Fechar [X]</a><br />
-				<?php include 'servico.php' ?>
-			</div>
-		</div>
-		<div id="mask"></div>
-		    
+		 
 		    <div id="folio-container" class="row">
 			<div class="col-md-3 col-sm-6 folio-item webdesign">
 			    <div class="folio-thumb item-h2">
@@ -436,7 +429,13 @@
 			
 		    </div> <!-- //. row .folio-container-->
 		</div>
-	    
+		<div id="boxes">
+			<div id="dialog" class="window">
+				<a href="#" class="close">Fechar [X]</a><br />
+				<?php include 'servico.php' ?>
+			</div>
+		</div>
+	    <div id="mask"></div>
 	</section>
 	<!-- End Portfolio Section -->
 	
