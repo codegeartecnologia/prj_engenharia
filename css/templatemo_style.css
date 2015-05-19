@@ -166,7 +166,7 @@ textarea:focus, input:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+/*
 #page-preloader, #spinner {
   position: fixed;
   top: 0;
@@ -178,6 +178,7 @@ textarea:focus, input:focus {
   z-index: 9999;
   overflow: hidden;
 }
+*/
 
 #spinner:after {
   border-width: 0 3px 0 0;

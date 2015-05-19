@@ -1,6 +1,6 @@
 <?php
     require_once(dirname(__FILE__)."/autoload.php");
-	protegeArquivo(basename(__FILE__));
+	protegeArquivo(__FILE__);
 	 
 	class usuario extends base{
 		
@@ -45,7 +45,7 @@
 		public function doLogout(){
 			$sessao = new sessao();
 			$sessao->destroy(TRUE);
-			redireciona('?erro=1');
+			redireciona('');
 		}//doLogout
 		
 		public function existeRegistro($campo=NULL, $valor=NULL){

@@ -17,7 +17,7 @@
 				if($user->doLogin($user)):
 					redireciona('painel.php');
 				else:
-					redireciona('?erro=2');
+					redireciona('index_login.php?erro=2');
 				endif;				
 			endif;			
 			include ('pages/login.php');

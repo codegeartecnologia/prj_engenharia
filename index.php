@@ -20,7 +20,7 @@
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 		<link href="css/animate.css" rel="stylesheet" media="screen">
         <link href="css/templatemo_style.css" rel="stylesheet" media="screen">
-         <link href="css/style.css" rel="stylesheet" media="screen">
+         <link href="css/style_site.css" rel="stylesheet" media="screen">
        
         <!-- JavaScripts -->
         <script src="js/jquery-1.10.2.min.js"></script>
@@ -68,7 +68,7 @@
 		<div class="row">
 		    
 		    <div class="col-md-4 logo">
-			<a href="acad_painel/index.php">
+			<a href="index_login.php">
 			    <img src="images/logo.png" alt="Impressum Template" title="Impressum Parallax Template">
 			</a>
 		    </div> <!-- //.logo -->
@@ -282,157 +282,21 @@
 		    <div class="col-md-12">
 			<ul id="filters" class="folio-filters">
 			    <li class="current"><a href="#" data-filter="*"> Todos </a></li>
-			    <li class=""><a href="#" data-filter=".webdesign">Web Design</a></li>
-			    <li class=""><a href="#" data-filter=".photography">Photography</a></li>
-			    <li class=""><a href="#" data-filter=".branding">Branding</a></li>
-			    <li class=""><a href="#" data-filter=".marketing">Marketing</a></li>
+			    <li class=""><a href="#" data-filter=".engenharia"> Engenharia </a></li>
+			    <li class=""><a href="#" data-filter=".saneamento"> Saneamento </a></li>
+			    <li class=""><a href="#" data-filter=".obras"> Obras </a></li>
 			</ul>
 		    </div>
 		</div>
 		 
 		    <div id="folio-container" class="row">
-			<div class="col-md-3 col-sm-6 folio-item webdesign">
-			    <div class="folio-thumb item-h2">
-				<img src="images/post1.jpg" alt="">
-				    <div class="folio-overlay">
-					<a href="#dialog" name="modal">
-					    <i class="fa fa-plus"></i>
-					</a>
-				    </div> <!-- //.folio-overlay -->
-				
-			    </div> <!-- //.folio-thumb -->
-			    <div class="folio-desc">
-				<span class="folio-tail"></span>
-				<h4><a id="a_link" href="#">Supermario Shoes</a></h4>
-				<h6>Website & Shop</h6>
-			    </div> <!-- //.folio-desc -->
-			</div> <!-- folio-item -->
-			
-			<div class="col-md-3 col-sm-6 folio-item photography">
-			    <div class="folio-thumb">
-				<img src="images/post2.jpg" alt="">
-				    <div class="folio-overlay">
-					<a href="#dialog" name="modal" >
-					    <i class="fa fa-plus"></i>
-					</a>
-				    </div> <!-- //.folio-overlay -->
-				
-			    </div> <!-- //.folio-thumb -->
-			    <div class="folio-desc">
-				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes</a></h4>
-				<h6>Website & Shop</h6>
-			    </div> <!-- //.folio-desc -->
-			</div> <!-- folio-item -->
-			
-			<div class="col-md-3 col-sm-6 folio-item branding">
-			    <div class="folio-thumb item-h2">
-				<img src="images/post3.jpg" alt="">
-				    <div class="folio-overlay">
-					<a href="images/big-post3.jpg" class="folio-zoom">
-					    <i class="fa fa-plus"></i>
-					</a>
-				    </div> <!-- //.folio-overlay -->
-				
-			    </div> <!-- //.folio-thumb -->
-			    <div class="folio-desc">
-				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes</a></h4>
-				<h6>Website & Shop</h6>
-			    </div> <!-- //.folio-desc -->
-			</div> <!-- folio-item -->
-			
-			<div class="col-md-3 col-sm-6 folio-item marketing">
-			    <div class="folio-thumb">
-				<img src="images/post4.jpg" alt="">
-				    <div class="folio-overlay">
-					<a href="images/big-post4.jpg" class="folio-zoom">
-					    <i class="fa fa-plus"></i>
-					</a>
-				    </div> <!-- //.folio-overlay -->
-				
-			    </div> <!-- //.folio-thumb -->
-			    <div class="folio-desc">
-				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes</a></h4>
-				<h6>Website & Shop</h6>
-			    </div> <!-- //.folio-desc -->
-			</div> <!-- folio-item -->
-			
-			<div class="col-md-3 col-sm-6 folio-item webdesign">
-			    <div class="folio-thumb">
-				<img src="images/post5.jpg" alt="">
-				    <div class="folio-overlay">
-					<a href="images/big-post5.jpg" class="folio-zoom">
-					    <i class="fa fa-plus"></i>
-					</a>
-				    </div> <!-- //.folio-overlay -->
-				
-			    </div> <!-- //.folio-thumb -->
-			    <div class="folio-desc">
-				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes</a></h4>
-				<h6>Website & Shop</h6>
-			    </div> <!-- //.folio-desc -->
-			</div> <!-- folio-item -->
-			
-			<div class="col-md-3 col-sm-6 folio-item photography">
-			    <div class="folio-thumb item-h2">
-				<img src="images/post6.jpg" alt="">
-				    <div class="folio-overlay">
-					<a href="images/big-post6.jpg" class="folio-zoom">
-					    <i class="fa fa-plus"></i>
-					</a>
-				    </div> <!-- //.folio-overlay -->
-				
-			    </div> <!-- //.folio-thumb -->
-			    <div class="folio-desc">
-				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes</a></h4>
-				<h6>Website & Shop</h6>
-			    </div> <!-- //.folio-desc -->
-			</div> <!-- folio-item -->
-			
-			<div class="col-md-3 col-sm-6 folio-item branding">
-			    <div class="folio-thumb">
-				<img src="images/post7.jpg" alt="">
-				    <div class="folio-overlay">
-					<a href="images/big-post7.jpg" class="folio-zoom">
-					    <i class="fa fa-plus"></i>
-					</a>
-				    </div> <!-- //.folio-overlay -->
-				
-			    </div> <!-- //.folio-thumb -->
-			    <div class="folio-desc">
-				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes</a></h4>
-				<h6>Website & Shop</h6>
-			    </div> <!-- //.folio-desc -->
-			</div> <!-- folio-item -->
-			
-			<div class="col-md-3 col-sm-6 folio-item marketing">
-			    <div class="folio-thumb">
-				<img src="images/post8.jpg" alt="">
-				    <div class="folio-overlay">
-					<a href="#dialog" name="modal">
-					    <i class="fa fa-plus"></i>
-					</a>
-				    </div> <!-- //.folio-overlay -->
-				
-			    </div> <!-- //.folio-thumb -->
-			    <div class="folio-desc">
-				<span class="folio-tail"></span>
-				<h4><a href="#">Supermario Shoes 2</a></h4>
-				<h6>Website & Shop</h6>
-			    </div> <!-- //.folio-desc -->
-			</div> <!-- folio-item -->
-			
+		    	<?php include'pages/portfolio.php';?>
 		    </div> <!-- //. row .folio-container-->
 		</div>
 		<div id="boxes">
 			<div id="dialog" class="window">
 				<a href="#" class="close">Fechar [X]</a><br />
-				<?php include 'servico.php' ?>
+				<?php include 'pages/servico.php' ?>
 			</div>
 		</div>
 	    <div id="mask"></div>

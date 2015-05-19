@@ -78,7 +78,7 @@
 	function verificaLogin(){
 		$sessao = new sessao();
 		if($sessao->getNvars() <= 0 || $sessao->getVar('logado') != TRUE || $sessao->getVar('ip') != $_SERVER['REMOTE_ADDR']):
-			redireciona('?erro=3');
+			redireciona('index_login.php?erro=3');
 		endif;
 	}
 	
@@ -86,19 +86,19 @@
 		if($msg != NULL):
 			switch($tipo):
 				case 'erro':
-					echo '<div class="erro"> '.$msg.'</div>';
+					echo '<div class="alert alert-danger"> '.$msg.'</div>';
 				break;
 				case 'alerta':
-					echo '<div class="alerta"> '.$msg.'</div>';
+					echo '<div class="alert alert-warning"> '.$msg.'</div>';
 				break;
 				case 'pergunta':
-					echo '<div class="pergunta"> '.$msg.'</div>';
+					echo '<div class="alert alert-info"> '.$msg.'</div>';
 				break;
 				case 'sucesso':
-					echo '<div class="sucesso"> '.$msg.'</div>';
+					echo '<div class="alert alert-success"> '.$msg.'</div>';
 				break;
 				default:
-					echo '<div class="sucesso"> '.$msg.'</div>';
+					echo '<div class="alert alert-success"> '.$msg.'</div>';
 				break;
 			endswitch;
 		endif;
